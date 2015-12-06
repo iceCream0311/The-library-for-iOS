@@ -109,8 +109,7 @@
 		9C0C166F1C1447F900A521C9 /* Codelibrary */ = {
 			isa = PBXGroup;
 			children = (
-				9C0C16731C1447F900A521C9 /* AppDelegate.h */,
-				9C0C16741C1447F900A521C9 /* AppDelegate.m */,
+				9C0C16AD1C14529E00A521C9 /* other */,
 				9C0C16761C1447F900A521C9 /* ViewController.h */,
 				9C0C16771C1447F900A521C9 /* ViewController.m */,
 				9C0C16791C1447F900A521C9 /* Main.storyboard */,
@@ -159,6 +158,15 @@
 				9C0C16AA1C14482500A521C9 /* UIView+YANExtension.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		9C0C16AD1C14529E00A521C9 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C16731C1447F900A521C9 /* AppDelegate.h */,
+				9C0C16741C1447F900A521C9 /* AppDelegate.m */,
+			);
+			name = other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,6 +531,7 @@
 				9C0C169F1C1447F900A521C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C0C16A01C1447F900A521C9 /* Build configuration list for PBXNativeTarget "CodelibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +540,7 @@
 				9C0C16A21C1447F900A521C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C0C16A31C1447F900A521C9 /* Build configuration list for PBXNativeTarget "CodelibraryUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +549,7 @@
 				9C0C16A51C1447F900A521C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

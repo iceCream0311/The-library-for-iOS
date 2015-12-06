@@ -1,6 +1,5 @@
 //
 //  NSString+YANExtension.m
-//  QQ聊天界面
 //
 //  Created by 赵岩 on 15/11/6.
 //  Copyright © 2015年 qiyexingcheng. All rights reserved.
