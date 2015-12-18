@@ -18,6 +18,8 @@
 		9C0C16991C1447F900A521C9 /* CodelibraryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C16981C1447F900A521C9 /* CodelibraryUITests.m */; };
 		9C0C16AB1C14482500A521C9 /* NSString+YANExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C16A81C14482500A521C9 /* NSString+YANExtension.m */; };
 		9C0C16AC1C14482500A521C9 /* UIView+YANExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C16AA1C14482500A521C9 /* UIView+YANExtension.m */; };
+		9C870D1F1C2409B500BCC4DE /* YANTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C870D1C1C2409B500BCC4DE /* YANTabBar.m */; };
+		9C870D201C2409B500BCC4DE /* YANTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C870D1E1C2409B500BCC4DE /* YANTabBarButton.m */; };
 		9CB74C691C19B25100622E1A /* UIImage+YANExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB74C681C19B25100622E1A /* UIImage+YANExtension.m */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,10 @@
 		9C0C16A81C14482500A521C9 /* NSString+YANExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YANExtension.m"; sourceTree = "<group>"; };
 		9C0C16A91C14482500A521C9 /* UIView+YANExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YANExtension.h"; sourceTree = "<group>"; };
 		9C0C16AA1C14482500A521C9 /* UIView+YANExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YANExtension.m"; sourceTree = "<group>"; };
+		9C870D1B1C2409B500BCC4DE /* YANTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANTabBar.h; sourceTree = "<group>"; };
+		9C870D1C1C2409B500BCC4DE /* YANTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANTabBar.m; sourceTree = "<group>"; };
+		9C870D1D1C2409B500BCC4DE /* YANTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANTabBarButton.h; sourceTree = "<group>"; };
+		9C870D1E1C2409B500BCC4DE /* YANTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANTabBarButton.m; sourceTree = "<group>"; };
 		9CB74C671C19B25100622E1A /* UIImage+YANExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YANExtension.h"; sourceTree = "<group>"; };
 		9CB74C681C19B25100622E1A /* UIImage+YANExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YANExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +122,7 @@
 				9C0C16761C1447F900A521C9 /* ViewController.h */,
 				9C0C16771C1447F900A521C9 /* ViewController.m */,
 				9C0C16791C1447F900A521C9 /* Main.storyboard */,
+				9C870D191C2409B500BCC4DE /* Custom_View */,
 				9C0C16A61C14482500A521C9 /* Category */,
 				9C0C167F1C1447F900A521C9 /* Assets.xcassets */,
 				9C0C16811C1447F900A521C9 /* LaunchScreen.storyboard */,
@@ -172,6 +179,25 @@
 				9C0C16741C1447F900A521C9 /* AppDelegate.m */,
 			);
 			name = other;
+			sourceTree = "<group>";
+		};
+		9C870D191C2409B500BCC4DE /* Custom_View */ = {
+			isa = PBXGroup;
+			children = (
+				9C870D1A1C2409B500BCC4DE /* TabBar */,
+			);
+			path = Custom_View;
+			sourceTree = "<group>";
+		};
+		9C870D1A1C2409B500BCC4DE /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				9C870D1B1C2409B500BCC4DE /* YANTabBar.h */,
+				9C870D1C1C2409B500BCC4DE /* YANTabBar.m */,
+				9C870D1D1C2409B500BCC4DE /* YANTabBarButton.h */,
+				9C870D1E1C2409B500BCC4DE /* YANTabBarButton.m */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,8 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C870D201C2409B500BCC4DE /* YANTabBarButton.m in Sources */,
 				9C0C167E1C1447F900A521C9 /* Codelibrary.xcdatamodeld in Sources */,
 				9CB74C691C19B25100622E1A /* UIImage+YANExtension.m in Sources */,
+				9C870D1F1C2409B500BCC4DE /* YANTabBar.m in Sources */,
 				9C0C16AB1C14482500A521C9 /* NSString+YANExtension.m in Sources */,
 				9C0C16781C1447F900A521C9 /* ViewController.m in Sources */,
 				9C0C16AC1C14482500A521C9 /* UIView+YANExtension.m in Sources */,
