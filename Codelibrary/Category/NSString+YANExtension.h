@@ -18,4 +18,26 @@
  */
 - (CGSize)sizeWithFont:(UIFont *)font maxTextSize:(CGSize)maxSize;
 
+
+/**
+ *  获得当前的时间
+ *
+ *  @return NSString
+ */
++ (NSString *)getCurrentDate;
+
+
+/**
+ *  获取时间戳
+ *
+ *  @return NSString
+ */
++ (NSString *)getTimestamp;
+/**
+ *  获得当时时间相对于现在的描述
+ *
+ *  @return NSString
+ */
++ (NSString *)getTheCurrentTimeDescription:(NSString *)compareTime;
+
 @end
