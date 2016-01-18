@@ -21,6 +21,8 @@
 //    NSLog(@"%@",date);
     NSString *string = [NSString getTheCurrentTimeDescription:@"2015-12-24-15-03-15"];
     NSLog(@"%@",string);
+    ZYLog(@"我们都是一家人");
+    [UIImage new];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

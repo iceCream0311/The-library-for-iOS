@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  The_Seccet_Project
+//
+//  Created by 赵岩 on 15/12/18.
+//  Copyright © 2015年 zyan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+#define iOS8 ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0)
+#define iOS9 ([[UIDevice currentDevice].systemVersion doubleValue] >= 9.0)
+
+
+
+#endif
+
+#ifdef DEBUG
+#define ZYLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZYLog(...)
+#endif
+

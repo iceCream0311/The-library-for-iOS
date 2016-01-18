@@ -11,6 +11,67 @@
 @implementation UIView (YANExtension)
 
 
+- (void)setX:(CGFloat)X{
+    CGRect frame = self.frame;
+    frame.origin.x = X;
+}
+
+- (CGFloat)X{
+    return self.frame.origin.x;
+}
+
+- (void)setY:(CGFloat)Y
+{
+    CGRect frame = self.frame;
+    frame.origin.y = Y;
+    self.frame = frame;
+}
+
+- (CGFloat)Y
+{
+    return self.frame.origin.y;
+}
+
+- (void)setWidth:(CGFloat)width
+{
+    CGRect frame = self.frame;
+    frame.size.width = width;
+    self.frame = frame;
+}
+
+- (CGFloat)width
+{
+    return self.frame.size.width;
+}
+
+- (void)setHeight:(CGFloat)height
+{
+    CGRect frame = self.frame;
+    frame.size.height = height;
+    self.frame = frame;
+}
+
+- (CGFloat)height
+{
+    return self.frame.size.height;
+}
+
+- (void)setSize:(CGSize)size
+{
+    //    self.width = size.width;
+    //    self.height = size.height;
+    CGRect frame = self.frame;
+    frame.size = size;
+    self.frame = frame;
+}
+
+- (CGSize)size
+{
+    return self.frame.size;
+}
+
+
+
 #pragma mark - 自适应拉伸图片
 
 + (UIImage *)resizableImageWithImageName:(NSString *)imageName{
@@ -59,6 +120,7 @@
     //获取最新的图片
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     return image;
-
 }
+
+
 @end

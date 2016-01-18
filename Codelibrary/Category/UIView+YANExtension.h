@@ -8,6 +8,33 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (YANExtension)
+
+/**
+ *  X
+ */
+@property (assign, nonatomic) CGFloat X;
+
+/**
+ *  Y
+ */
+@property (assign, nonatomic) CGFloat Y;
+
+/**
+ *  width
+ */
+@property (assign, nonatomic) CGFloat width;
+
+/**
+ *  height
+ */
+@property (assign, nonatomic) CGFloat height;
+
+/**
+ *  size
+ */
+@property (assign, nonatomic) CGSize size;
+
+
 /**
  *  获取拉伸后的图片
  *

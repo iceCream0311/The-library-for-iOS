@@ -21,7 +21,7 @@
  */
 @property (strong, nonatomic) id<YANTabBarDelegate> delegate;
 /**
- *  像tabBar中添加之控件
+ *  像tabBar中添加子控件
  *
  *  @param normalSting  normalSting description
  *  @param disableImage disableImage description
