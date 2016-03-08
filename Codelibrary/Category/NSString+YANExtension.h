@@ -40,4 +40,8 @@
  */
 + (NSString *)getTheCurrentTimeDescription:(NSString *)compareTime;
 
+/**
+ *  根据时间戳返回字符串时间
+ */
++ (NSString *)getTheTimeFromTimestamp:(NSTimeInterval)timeStamp;
 @end

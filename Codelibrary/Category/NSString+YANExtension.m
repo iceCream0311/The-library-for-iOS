@@ -52,4 +52,12 @@
     return result;
 }
 
++ (NSString *)getTheTimeFromTimestamp:(NSTimeInterval)timeStamp{
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:timeStamp];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"YYYY-MM-dd-HH-mm-ss"];
+    NSString *dateString = [formatter stringFromDate:date];
+    return dateString;
+}
+
 @end
